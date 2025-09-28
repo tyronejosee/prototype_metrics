@@ -3,6 +3,7 @@
 Complete Grafana + Prometheus monitoring setup with Docker Compose, designed for learning and experimentation.
 
 ![Main](image.jpg)
+![Dashboard](dashboard.webp)
 
 ## 🏗️ Architecture Overview
 
@@ -22,22 +23,24 @@ Start the Services
 
 ```bash
 # Start all services in the background
-docker-compose up -d
+docker compose up -d
 
 # Check if all services are running
-docker-compose ps
+docker compose ps
 ```
 
 Install Python Dependencies
 
+> Recommended to use [uv](https://docs.astral.sh/uv/guides/install-python/#getting-started).
+
 ```bash
-pip install -r requirements.txt
+uv sync
 ```
 
 Run the Metric Generator
 
 ```bash
-python metric_generator.py
+uv run metric_generator.py
 ```
 
 Access the Services

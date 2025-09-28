@@ -1,0 +1,10 @@
+[project]
+name = "prototype-metrics"
+version = "0.1.0"
+description = "Complete Grafana + Prometheus monitoring setup with Docker Compose, designed for learning and experimentation."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=1.26",
+    "requests==2.31.0",
+]
